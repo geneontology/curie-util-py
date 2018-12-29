@@ -17,21 +17,21 @@ r = requests.get(url)
 
 Then create a CurieUtil object:
 ```python
-from src.curieutil import CurieUtil
+from curieutil import CurieUtil
 mapping = CurieUtil.parseContext(r.json())
 curie = CurieUtil(mapping)
 ```
 
 ### Get IRI
 ```python
-curie.getIri("ZFIN:ZDB-GENE-031112-7");
-curie.getIri("MGI:MGI:34340");
+curie.getIri("ZFIN:ZDB-GENE-031112-7")
+curie.getIri("MGI:MGI:34340")
 ```
 
 ### Get CURIE
 ```python
-curie.getCurie("http://identifiers.org/zfin/ZDB-GENE-031112-7");
-curie.getCurie("http://identifiers.org/mgi/MGI:34340");
+curie.getCurie("http://identifiers.org/zfin/ZDB-GENE-031112-7")
+curie.getCurie("http://identifiers.org/mgi/MGI:34340")
 ```
 
 ## Notes

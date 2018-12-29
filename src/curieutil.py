@@ -1,4 +1,4 @@
-from src.trie import Trie
+from .trie import Trie
 from bidict import bidict
 
 

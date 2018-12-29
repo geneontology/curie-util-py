@@ -1,4 +1,4 @@
-from src.trienode import TrieNode
+from .trienode import TrieNode
 
 
 class Trie:
