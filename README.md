@@ -17,7 +17,7 @@ r = requests.get(url)
 
 Then create a CurieUtil object:
 ```python
-from curieutil import CurieUtil
+from src.curieutil import CurieUtil
 mapping = CurieUtil.parseContext(r.json())
 curie = CurieUtil(mapping)
 ```
